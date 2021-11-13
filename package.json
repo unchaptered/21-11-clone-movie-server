@@ -1,0 +1,14 @@
+{
+  "name": "project-2021-11-clone-movie-server",
+  "version": "1.0.0",
+  "description": "Re-build from project-2021-11-theory-graphql-backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "unchaptered",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}

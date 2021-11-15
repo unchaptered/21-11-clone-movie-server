@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "Re-build from project-2021-11-theory-graphql-backend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "unchaptered",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
     "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

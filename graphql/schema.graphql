@@ -1,0 +1,17 @@
+type Movie {
+  # mongoose 의 schema 와 같은 역할을 하고 있다.
+  # Movie의 데이터 필드는 다음과 같은 스칼라 타입을 가진다.
+  id: Int!
+  title: String!
+  rating: Float
+  summary: String
+  lang: String
+  image: String
+}
+type Query {
+  # 일종의 생성자? 메서드? 뭐라고 불러야할지 잘 모르겠다.
+  # 아래에 정의된 것은 javasript.js 안에 별도로 인식시키는 작업이 필요(잊지말자)
+  movies(limit: Int, page: Int, quality: String, rating: Float): [Movie]!
+  movie(id: Int!): Movie
+  suggest(id: Int!): [Movie]!
+}
